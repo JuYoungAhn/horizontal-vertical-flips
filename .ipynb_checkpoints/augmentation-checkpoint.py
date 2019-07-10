@@ -6,12 +6,12 @@ import time
 def get_horizontal_vertical_flips(x, ch) : 
     """ get horizontal and vertical flips of images
     Args:
-            x (ndarray): 4-D tensor 
-            ch (int): feature channel
-            - gray-scale image: 1
-            - color image: 3
-        Returns:
-            ndarray: augmented image tensor (4-D)
+        x (ndarray): 4-D tensor 
+        ch (int): feature channel
+        - gray-scale image: 1
+        - color image: 3
+    Returns:
+        ndarray: augmented image tensor (4-D)
     """
     SAMPLE = x.shape[0]
     WIDTH = x.shape[1]
